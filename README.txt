@@ -38,6 +38,7 @@ Prerequisites
 -Visual Studio 2012+.NET Framework v4.0.30319
 -Internet connection
 -5 GB of hard disk space
+(-Visual Studio 2013 Express will work, see Notes)
 
 
 Usage
@@ -52,6 +53,17 @@ Usage
 	will have been opened with an example tutorial solution.
 5. Press CTRL+F5 to compile.
 
-Note: The example solution only has Release configuration.
-Debug is not supported for now.
+
+Notes
+=====
+
+-The example solution only has Release configuration.
+Debug is not supported for now, but might work.
+
+-Visual Studio 2013 Express NOT work out-of-the-box!
+Somehow the check for the registry entries is different for the
+express version. Also the automatic start of VS at the end of
+compilation does not work, as the path is different. You might
+want to hack the BATCH script and remove the check, or trigger
+me (with some proper bait) to do that for you.
 
